@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ResponsiveController">
+   <children>
+      <AnchorPane layoutX="119.0" layoutY="12.0" prefHeight="375.0" prefWidth="468.0" style="-fx-background-color: #F0F7F7;" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="12.0">
+         <effect>
+            <DropShadow color="#000000a3" radius="19.33" width="58.32" />
+         </effect>
+         <children>
+            <Pane fx:id="pn_home" layoutX="7.0" layoutY="7.0" prefHeight="360.0" prefWidth="471.0" style="-fx-background-color: #d0e4ef;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0" />
+            <Pane fx:id="pn_tank" layoutX="8.0" layoutY="8.0" prefHeight="360.0" prefWidth="453.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="8.0" />
+            <Pane fx:id="pn_pvt" layoutX="13.0" layoutY="15.0" prefHeight="375.0" prefWidth="468.0" style="-fx-background-color: #01080f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TabPane layoutX="7.0" layoutY="9.0" prefHeight="533.0" prefWidth="745.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Untitled Tab 1">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                      <Tab text="Untitled Tab 2">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.8844984802431611" layoutX="63.0" layoutY="12.0" prefHeight="453.0" prefWidth="660.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="12.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></Pane>
+            
+            
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_home" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="119.0" text="Home" />
+      <Button fx:id="btn_pvt" layoutY="56.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="119.0" text="PVT" />
+      <Button fx:id="btn_tank" layoutY="102.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="119.0" text="TANK" />
+   </children>
+</AnchorPane>

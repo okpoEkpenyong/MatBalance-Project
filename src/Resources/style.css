@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 16, 2018, 12:42:24 PM
+    Author     : Owner
+*/
+
+.default-color0.chart-series-line {
+    -fx-stroke: transparent;
+}
+
+.default-color1.chart-line-symbol {
+    -fx-background-color: transparent;
+}
+
+#pn_home{
+        -fx-background-image: url("laserlogo2.png");
+        -fx-background-repeat: stretch;   
+        -fx-background-size: 900 506;
+        -fx-background-position: center center;
+        -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+  }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="778.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <SplitPane dividerPositions="0.823146944083225" prefHeight="394.0" prefWidth="778.0" style="-fx-background-color: #d0e4ef;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="392.0" prefWidth="594.0">
+               <children>
+                  <TitledPane layoutX="22.0" layoutY="29.0" prefHeight="335.0" prefWidth="594.0" text="DRIVE INDICES" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="29.0">
+                     <content>
+                        <TableView fx:id="tbl_drives" editable="true" layoutX="14.0" layoutY="37.0" prefHeight="414.0" prefWidth="965.0" tableMenuButtonVisible="true" />
+                     </content>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="404.0" prefWidth="22.0">
+               <children>
+                  <TitledPane layoutX="14.0" layoutY="26.0" prefHeight="335.0" prefWidth="335.0" text="Chart" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="29.0">
+                     <content>
+                        <LineChart fx:id="drives_chart" layoutX="10.0" layoutY="564.0" prefHeight="237.0" prefWidth="458.0" style="-fx-background-color: White;">
+                           <xAxis>
+                              <CategoryAxis fx:id="drives_xAxis" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis fx:id="drives_yAxis" side="LEFT" />
+                           </yAxis>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </LineChart>
+                     </content>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

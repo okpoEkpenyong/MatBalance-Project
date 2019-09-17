@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="915.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PVTController">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="895.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SplitPane dividerPositions="0.9544787077826725" layoutX="-8.0" layoutY="-6.0" prefHeight="390.0" prefWidth="715.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="-10.0" AnchorPane.topAnchor="-6.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="388.0" prefWidth="672.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="517.0" prefWidth="25.0" />
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-70.0" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="776.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SplitPane dividerPositions="0.9035202086049544" layoutX="-20.0" layoutY="-5.0" prefHeight="517.0" prefWidth="936.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-20.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-5.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="515.0" prefWidth="857.0">
+                     <children>
+                        <TitledPane layoutX="28.0" layoutY="196.0" prefHeight="308.0" prefWidth="803.0" text="FLUID PROPERTIES TABLE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="196.0">
+                           <content>
+                              <TableView fx:id="tbl_pvt" editable="true" layoutX="-2.0" layoutY="146.0" prefHeight="225.0" prefWidth="569.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="155.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </TableView>
+                           </content>
+                        </TitledPane>
+                        <TitledPane layoutX="18.0" layoutY="5.0" prefHeight="124.0" prefWidth="540.0" text="ADD TO TABLE">
+                           <content>
+                              <AnchorPane prefHeight="112.0" prefWidth="515.0">
+                                 <children>
+                                    <TextField fx:id="pr_input" layoutX="91.0" layoutY="9.0" prefHeight="25.0" prefWidth="80.0" promptText="Pressure">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="cf_input" layoutX="179.0" layoutY="57.0" prefHeight="31.0" prefWidth="74.0" promptText="Cf">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="mnth_input" layoutX="9.0" layoutY="9.0" prefHeight="25.0" prefWidth="76.0" promptText="Date">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="gor_input" layoutX="94.0" layoutY="57.0" prefHeight="25.0" prefWidth="74.0" promptText="Rs">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="bg_input" layoutX="354.0" layoutY="9.0" prefHeight="25.0" prefWidth="80.0" promptText="Bg">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="bt_input" layoutX="9.0" layoutY="57.0" prefHeight="25.0" prefWidth="77.0" promptText="Bt">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <Button fx:id="submit" layoutX="447.0" layoutY="57.0" mnemonicParsing="false" text="Submit" />
+                                    <TextField fx:id="bo_input" layoutX="181.0" layoutY="9.0" prefHeight="25.0" prefWidth="74.0" promptText="Bo">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="bw_input" layoutX="260.0" layoutY="9.0" prefHeight="25.0" prefWidth="80.0" promptText="Bw">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="co_input" layoutX="264.0" layoutY="57.0" prefHeight="31.0" prefWidth="79.0" promptText="Co">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="cw_input" layoutX="353.0" layoutY="57.0" prefHeight="25.0" prefWidth="83.0" promptText="Cw">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TextField fx:id="pi_input" layoutX="26.0" layoutY="158.0" prefHeight="25.0" prefWidth="56.0" />
+                        <TextField fx:id="rsi_input" layoutX="358.0" layoutY="158.0" prefHeight="25.0" prefWidth="59.0" />
+                        <TextField fx:id="pb_input" layoutX="289.0" layoutY="158.0" prefHeight="25.0" prefWidth="58.0" />
+                        <TextField fx:id="boi_input" layoutX="222.0" layoutY="158.0" prefHeight="25.0" prefWidth="59.0" />
+                        <TextField fx:id="bgi_input" layoutX="153.0" layoutY="158.0" prefHeight="25.0" prefWidth="58.0" />
+                        <TextField fx:id="bti_input" layoutX="88.0" layoutY="158.0" prefHeight="25.0" prefWidth="56.0" />
+                        <Button fx:id="load" layoutX="677.0" layoutY="158.0" mnemonicParsing="false" text="Load " />
+                        <Button fx:id="read" layoutX="615.0" layoutY="158.0" mnemonicParsing="false" text="Read" />
+                        <TextField fx:id="res_note" blendMode="GREEN" editable="false" layoutX="425.0" layoutY="159.0" prefHeight="29.0" prefWidth="181.0" promptText="Reservoir Condition">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#000000d5" height="0.0" radius="4.75" />
+                           </effect>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="70.0" />
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

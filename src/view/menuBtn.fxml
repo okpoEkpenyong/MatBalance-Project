@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.MenuBtnController">
+    <stylesheets>
+        <URL value="@/Resources/menubtn.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="460.0" prefWidth="103.0" style="-fx-background-color: #ebf3fb;">
+         <children>
+            <Button fx:id="btn_home" layoutX="1.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="107.0" text="HOME">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_pvt" layoutX="1.0" layoutY="46.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="107.0" text="PVT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_tank" layoutY="92.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="107.0" text="TANK">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

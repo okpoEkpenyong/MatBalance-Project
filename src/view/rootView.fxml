@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResponsiveController">
+   <children>
+      <AnchorPane layoutX="4.0" prefHeight="553.0" prefWidth="112.0" style="-fx-background-color: #ebf3fb;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btn_home" layoutX="1.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="107.0" text="HOME">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_pvt" layoutX="1.0" layoutY="46.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="107.0" text="PVT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_tank" layoutY="92.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="107.0" text="TANK">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Pane fx:id="pn_home" layoutX="118.0" layoutY="-1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="460.0" prefWidth="756.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="-1.0" />
+      <TabPane fx:id="tPanePVT" layoutX="122.0" layoutY="6.0" prefHeight="460.0" prefWidth="748.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+         <tabs>
+            <Tab fx:id="tabFluidProps" text="FLUID PROPERITES">
+                <content>
+                  <fx:include fx:id="tab1FluidProps" source="FluidTab.fxml" />
+               </content>               
+            </Tab>           
+             <Tab fx:id="tabCorrelations" text="CORRELATIONS">
+                <content>
+               <!--  <fx:include fx:id="tab2Correlations" source="tab2barView.fxml" />-->
+                </content>
+            </Tab> 
+         </tabs>
+      </TabPane>    
+      <TabPane fx:id="tPaneTank" layoutX="117.0" prefHeight="466.0" prefWidth="762.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="TabAcquifer" text="Acquifer Setup">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;">
+                     <children>
+                        <HBox layoutX="24.0" layoutY="57.0" spacing="10.0">
+                           <children>
+                              <ComboBox fx:id="comboAqModel" prefHeight="39.0" prefWidth="171.0" promptText="Acquifer Model" />
+                              <ComboBox fx:id="comboAqBoundary" prefHeight="39.0" prefWidth="214.0" promptText="Acquifer Boundary Type" />
+                              <ComboBox fx:id="comboAqSystems" prefHeight="39.0" prefWidth="180.0" promptText="Acquifer Systems" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+          <Tab fx:id="TabTankData" text="Data">
+            <content>
+                 <fx:include fx:id="tab2TankProps" source="DataTab.fxml" />
+            </content>
+          </Tab>
+            <Tab fx:id="TabPMatch" text="Pressure Matching">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+               </content>
+            </Tab>
+            <Tab fx:id="TabDrives" text="Drive Indices">
+               <content>
+                  <Pane style="-fx-background-color: black;" />
+                   <fx:include fx:id="tab4DrivesProps" source="DrivesTab.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="TabRelPerm" text="Relative Permeability">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
